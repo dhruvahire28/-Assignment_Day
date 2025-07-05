@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 3 Assignment - WebTeam Pvt. Ltd.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .heading {
+      color: darkblue;
+      text-align: center;
+    }
+
+    .table-container, .form-container, .iframe-container, .block-inline-container {
+      margin-top: 30px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #000;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+
+    .inline-box {
+      display: inline;
+      padding: 5px;
+      background-color: #ddd;
+    }
+
+    .block-box {
+      display: block;
+      margin-top: 10px;
+      background-color: #ccc;
+      padding: 10px;
+    }
+
+    .btn {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .input-field {
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Day 3 Assignment - WebTeam Pvt. Ltd.
+  -->
+  <h1 class="heading">WebTeam Pvt. Ltd. - Day 3 Assignment</h1>
+
+    <div class="table-container">
+    <h2>Team Roles</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Department</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dhruv Ahire</td>
+          <td>Frontend Developer</td>
+          <td>Web Development</td>
+        </tr>
+        <tr>
+          <td>Tejas chaudhary</td>
+          <td>UI/UX Designer</td>
+          <td>Design</td>
+        </tr>
+        <tr>
+          <td>shlok bhavsar</td>
+          <td>Backend Developer</td>
+          <td>Development</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="form-container">
+    <h2>User Registration Form</h2>
+    <form>
+      <label class="label">Full Name:</label><br>
+      <input type="text" class="input-field" placeholder="Enter your name" required><br>
+
+      <label class="label">Email:</label><br>
+      <input type="email" class="input-field" placeholder="Enter your email" required><br>
+
+      <label class="label">Gender:</label><br>
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female<br><br>
+
+      <label class="label">Skills:</label><br>
+      <input type="checkbox" value="HTML"> HTML
+      <input type="checkbox" value="CSS"> CSS
+      <input type="checkbox" value="JavaScript"> JavaScript<br><br>
+
+      <label class="label">Upload Resume:</label><br>
+      <input type="file"><br><br>
+
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </div>
+
+
+    <div class="block-inline-container">
+    <h2>Block vs Inline Elements</h2>
+
+    <div class="block-box">I am a block element (div)</div>
+    <span class="inline-box">I am inline 1 (span)</span>
+    <span class="inline-box">I am inline 2 (span)</span>
+
+    <!-- 
+      Explanation: 
+      - Block elements take full width and start on a new line.
+      - Inline elements stay in line and take only as much width as needed.
+    -->
+  </div>
+  <div class="iframe-container">
+    <h2>Embedded Map (Iframe)</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.850961347558!2d73.79763227519248!3d19.07489475204806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bfc048cfc2fd%3A0x44ed5ae0f1189f44!2sKK%20Wagh%20Institute%20of%20Engineering%20Education%20and%20Research!5e0!3m2!1sen!2sin!4v1689925290783!5m2!1sen!2sin" 
+      width="100%" height="300" style="border:0;" 
+      allowfullscreen="" loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</body>
+</html>
